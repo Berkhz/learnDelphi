@@ -2,13 +2,14 @@ program ProjetoInicial;
 
 uses
   Vcl.Forms,
-  Inicial in 'Inicial.pas' {Form1};
+  Inicial in 'Inicial.pas' {CadastroClientes},
+  Painel in 'Painel.pas' {Frm_Painel};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TCadastro_Usuarios, Cadastro_Usuarios);
   Application.Run;
 end.
